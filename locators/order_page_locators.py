@@ -1,0 +1,21 @@
+from selenium.webdriver.common.by import By
+
+class OrderPageLocators:
+    input_name = [By.XPATH, './/input[@placeholder = "* Имя"]']
+    input_lastname = [By.XPATH, './/input[@placeholder = "* Фамилия"]']
+    input_address = [By.XPATH, './/input[@placeholder = "* Адрес: куда привезти заказ"]']
+    input_station = [By.XPATH, './/input[@placeholder = "* Станция метро"]']
+    input_number = [By.XPATH,'.//input[@placeholder = "* Телефон: на него позвонит курьер"]']
+    input_date = [By.XPATH, './/input[@placeholder = "* Когда привезти самокат"]']
+    input_comment = [By.XPATH,'.//input[@placeholder = "Комментарий для курьера"]']
+    rent_time_drop_list = [By.XPATH, './/div[text() = "* Срок аренды"]']
+    button_station = [By.CLASS_NAME, 'select-search__select']
+    button_next = [By.XPATH, './/button[text() = "Далее"]']
+    button_order = [By.XPATH,'.//div[@class = "Order_Buttons__1xGrp"]//button[text() = "Заказать"]']
+    button_yes = [By.XPATH, './/button[text() = "Да"]']
+    rent_period_1 = [By.XPATH, './/div[text() = "двое суток"]']
+    rent_period_2 = [By.XPATH, './/div[text() = "пятеро суток"]']
+    checkbox_black = [By.XPATH, './/label[@for = "black"]']
+    checkbox_grey = [By.XPATH, './/label[@for = "grey"]']
+    empty_place = [By.CLASS_NAME, 'App_App__15LM-']
+    button_success_message = [By.XPATH, './/button[text() = "Посмотреть статус"]']
